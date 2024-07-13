@@ -1,2 +1,2 @@
 # JavaScript30DayChallenge
-Welcome to My 30 Days JavaScript Challenge 
+Welcome to My 30 Days JavaScript Challenge on ChaiAurCode
