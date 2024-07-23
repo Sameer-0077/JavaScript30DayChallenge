@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="parent-element">
+        <button id="child-element">Add child</button>
+    </div>
+</body>
+<script>
+    const parentElement = document.getElementById('parent-element');
+    const childElemet  = document.getElementById('child-element');
+    childElemet.addEventListener('click', ()=>{
+        const newChild = document.createElement('div');
+        newChild.textContent = "I'm a new child";
+        newChild.classList.add('child');
+        parentElement.appendChild(newChild);
+    })
+</script>
+</html>

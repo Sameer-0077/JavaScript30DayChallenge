@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="my-form">
+        <label for="select">Select an option</label>
+        <select name="select" id="my-select">
+            <option value="Option1">Option1</option>
+            <option value="Option2">Option2</option>
+            <option value="Option3">Option3</option>
+            <option value="Option4">Option4</option>
+        </select>
+        <p id="display-para">Selected Option is : None</p>
+    </form>
+</body>
+<script>
+    const mySelect = document.getElementById('my-select');
+    const displayPara = document.getElementById('display-para');
+    mySelect.addEventListener('change',() => {
+        const selectedValue = event.target.value;
+        displayPara.textContent = `Selected Option is : ${selectedValue}`;
+    })
+</script>
+</html>
